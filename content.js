@@ -1,9 +1,17 @@
+let isActive = false;
+
 chrome.runtime.onMessage.addListener(
     function(request) {
       if (request.toggle === "toggle")
+        if (isActive) {
+        revert()
+        isActive = !isActive
+      } else {
         script()
+        isActive = !isActive
+      }
     }
-  );
+);
 
 
 function script() {
@@ -18,4 +26,11 @@ function script() {
     floatDiv.classList.remove('layout--content--3Smmq')
 
     document.querySelector('.index--container--2OwOl').style.margin = '0'
+}
+
+function revert() {
+  let floatDiv = document.querySelector(".index--atom--lmAIo")
+  document.querySelector('.index--container--2OwOl').style.margin = '25px'
+  floatDiv.removeAttribute('style')
+  floatDiv.classList.add('layout--content--3Smmq')
 }

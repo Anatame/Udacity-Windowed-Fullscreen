@@ -11,8 +11,6 @@ A chrome extension that resizes course video player on udacity website to fit yo
  **How to use?**
  
  - Just click on the icon in the extensions section when on the udacity video course page and use the toggle button.
-  
- *`Note: To get the player back to original size just refresh the page.`*
 
 <br/> <br/>
 
