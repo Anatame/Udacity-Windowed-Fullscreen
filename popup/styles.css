@@ -1,0 +1,27 @@
+body {
+    background-color: #121212;
+    font-family: 'Roboto', sans-serif;
+}
+
+.toggle {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ff0055;
+    color: white;
+    border: none;
+    height: 30px;
+    width: 80px;
+    border-radius: 6px;
+    transition: all 0.3s;
+    font-weight: bold;
+} 
+
+.toggle:hover{
+    height: 35px;
+    width: 90px;
+    background-color: #fc1c67;
+}
+
+.toggle:active{
+    color: #121212;
+    background-color: #ffffff;
+}

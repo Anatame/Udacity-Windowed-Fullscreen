@@ -1,0 +1,27 @@
+{
+    "manifest_version": 3,
+    "name": "Udacity Windowed FullScreen",
+    "version": "1.0.0",
+    "description": "This extensions resizes the video window in udacity to cover all the space inside the window",
+    "short_name": "Udacity Vid Resizer",
+    "permissions": ["storage", "activeTab", "scripting", "webRequest", "webNavigation", "identity"],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["https://classroom.udacity.com/*"],
+        "js": ["content.js"]
+      } 
+    ],
+    "action": {
+      "default_title": "Does a thing when you do a thing",
+      "default_popup": "popup/popup.html",
+      "default_icon": {
+        "128": "icons/udacity.png"
+      }
+    },
+    "icons": {
+       "128": "icons/udacity.png"
+     }
+   }
