@@ -19,5 +19,7 @@ A chrome extension that resizes course video player on udacity website to fit yo
 > 
 >  I was watching a course tutorial for Android Dev on Udacity and the video player was just uncomfortably small to see the code the instructor was explaining. So, I was like rather than suffer through this let's do something about it and then I made this.. 
 <img src="https://c.tenor.com/kDTHevpBYWEAAAAi/shrug-oh-well.gif"/>
-*
 
+# Screenshots
+
+![screenshot](https://i.imgur.com/BQIyzuf.gif)
